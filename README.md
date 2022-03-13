@@ -45,17 +45,15 @@ They've asked us to estimate and start working on the development of the website
 
 - Project repository
 
-    ```
-    https://github.com/jubaan/dh_proyecto-integrador
-    ```
+  - [huskyMotors](https://github.com/jubaan/husky)
 
 - Project backlog
 
-   [dh_proyecto-integrador](https://github.com/users/jubaan/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Milestone%22%2C1488678%2C1488695%2C1488891%2C%22Assignees%22%2C%22Labels%22%5D)
+   - [huskyMotors backlog](https://github.com/users/jubaan/projects/2)
 
 - Figma wireframe and sketch
 
-    [huskyMotors wireframes and sketch](https://www.figma.com/file/V0DF5XfrfdrDdF4pCwZyLl/dh_proyecto-integrador?node-id=0%3A1)
+    - [huskyMotors wireframes and sketch](https://www.figma.com/file/48XzmI02xliSS4ZhjmtDwD/Husky-Motors?node-id=20%3A388)
 
 - Design references
 
@@ -64,6 +62,10 @@ They've asked us to estimate and start working on the development of the website
     - [.mbike mobile app interface](https://www.behance.net/gallery/129897899/mbike-mobile-app-interface?tracking_source=search_projects_recommended%7Cecommerce%20ux%20web%20design%20motorcycle)
     - [Promo landing page for motorcycle](https://www.behance.net/gallery/134483585/Promo-landing-for-motorcycle-promo-sajt-dlja-motocikla?tracking_source=search_projects_recommended%7Cmotorcycle)
     - [Motorcycle buying app](https://www.behance.net/gallery/136112471/Motorcycle-buying-app?tracking_source=search_projects_recommended%7Cmotorcycle)
+ 
+- Live preview
+
+  - [huskyMotors](#)
 ## Author
 
 **Julio Añoveros**:
