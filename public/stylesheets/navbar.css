@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+}
+
+.navbar__item {
+  font-weight: var(--bold);
+  color: var(--color-gray);
+}
+
+.navbar__item:hover {
+  color: var(--color-dark);
+}
+
+.navbar__item:last-child {
+  color: var(--color-red);
+}

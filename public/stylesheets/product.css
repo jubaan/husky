@@ -1,0 +1,12 @@
+/* .motorbike {
+} */
+
+.motorbike__category {
+  font-family: var(--cabin);
+  font-weight: var(--regular);
+}
+
+.motorbike__tile {
+  font-family: var(--roboto);
+  font-weight: var(--bold);
+}

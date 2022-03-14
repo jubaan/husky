@@ -1,0 +1,144 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.cards::-webkit-scrollbar {
+  height: 4px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+  border-radius: 50px;
+}
+
+.cards::-webkit-scrollbar-track-piece {
+  background-color: var(--color-light);
+  border-radius: 50px;
+}
+
+.hero__card {
+  margin-right: 30px;
+}
+
+.hero__card:last-child {
+  margin-right: 0;
+}
+
+.hero__title {
+  font-family: var(--roboto);
+  font-size: 46px;
+}
+
+.hero__title_bold {
+  color: var(--color-dark);
+  font-weight: var(--bold);
+}
+
+.hero__title_light {
+  font-weight: var(--light);
+}
+
+.card__image {
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.card__image_motocross {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/88814_RSC5206%20miwi%20B_Flat:Large?wid=1260&hei=718&dpr=off');
+  background-position: 20% 50%;
+}
+
+.card:hover .card__image_motocross {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/88814_RSC5206%20miwi%20B_Flat:Large?wid=1260&hei=718&dpr=off');
+  background-blend-mode: color;
+}
+
+.card__image_enduro {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/Action_FE-350-2022:Small?wid=800&hei=800&dpr=off');
+  background-position: 100% 50%;
+}
+
+.card:hover .card__image_enduro {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/Action_FE-350-2022:Small?wid=800&hei=800&dpr=off');
+  background-blend-mode: color;
+}
+
+.card__image_travel {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/Travel_SegmentPage_Norden901_Teaser1:Medium?wid=675&hei=507&dpr=off');
+  background-position: 80% 50%;
+}
+
+.card:hover .card__image_travel {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/Travel_SegmentPage_Norden901_Teaser1:Medium?wid=675&hei=507&dpr=off');
+  background-blend-mode: color;
+}
+
+.card__image_naked {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/101594_Vitpilen-401-2022?wid=375&dpr=off');
+  background-position: 50% 50%;
+}
+
+.card:hover .card__image_naked {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/101594_Vitpilen-401-2022?wid=375&dpr=off');
+  background-blend-mode: color;
+}
+
+.card__image_supermoto {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/supermoto-story2-1:Medium?wid=700&hei=523&dpr=off');
+  background-position: 30% 50%;
+}
+
+.card:hover .card__image_supermoto {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/supermoto-story2-1:Medium?wid=700&hei=523&dpr=off');
+  background-blend-mode: color;
+}
+
+.card__image_electric {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/100597_Husqvarna%20eDrive%20MY22:Large?wid=1260&hei=713&dpr=off');
+  background-position: 65% 50%;
+}
+
+.card:hover .card__image_electric {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/100597_Husqvarna%20eDrive%20MY22:Large?wid=1260&hei=713&dpr=off');
+  background-blend-mode: color;
+}
+
+.card__numeration {
+  font-size: 12px;
+  font-weight: var(--regular);
+  color: var(--color-red);
+}
+
+.card__title {
+  font-family: var(--roboto);
+  text-transform: uppercase;
+  font-weight: var(--bold);
+  color: var(--color-dark);
+  margin-bottom: 20px;
+}
+
+.card:hover .card__title {
+  color: var(--color-red);
+}
