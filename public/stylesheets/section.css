@@ -1,15 +1,19 @@
 .section {
-  padding: 50px 30px;
+  margin: 50px 0 70px;
 }
 
 .section__title {
-  font-family: var(--roboto);
+  font-family: var(--font-roboto-condensed);
   font-size: 24px;
-  font-weight: var(--bold);
+  font-weight: var(--weight-bold);
   color: var(--color-red);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 0 30px;
 }
 
 .section__subtitle {
+  font-size: 16px;
   color: var(--color-gray);
+  margin-bottom: 30px;
+  padding: 0 30px;
 }
