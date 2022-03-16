@@ -1,0 +1,81 @@
+.login__image {
+  display: none;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    url('https://s7g10.scene7.com/is/image/ktm/2019-03-28-husqvarna-Influencer-495-wotr_flat-sRGB-1:Medium?wid=700&hei=528&dpr=off');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: color;
+  border-radius: 3px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 5px;
+}
+
+.form__input {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: var(--font-cabin);
+  font-size: 16px;
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px solid var(--color-red);
+  width: 100%;
+}
+
+.form__label {
+  color: var(--color-red);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__button {
+  padding: 9px 18px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+  border-radius: 3px;
+}
+
+.form__button:hover {
+  background-color: var(--color-red);
+}
+
+@media only screen and (min-width: 426px) {
+  .login {
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .login__image {
+    display: flex;
+    flex: 1 0 50%;
+  }
+
+  .form {
+    padding-left: 0;
+    flex: 1 0 50%;
+  }
+}

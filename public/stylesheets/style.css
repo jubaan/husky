@@ -8,6 +8,8 @@
 @import url('./footer.css');
 @import url('./release.css');
 @import url('./newsletter.css');
+@import url('./signup.css');
+@import url('./login.css');
 
 :root {
   --font-cabin: 'Cabin', sans-serif;
