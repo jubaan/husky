@@ -12,7 +12,7 @@ router.get('/models', function (req, res, next) {
   res.render(`models`, { title: 'Express' });
 });
 
-router.get('/model', function (req, res, next) {
+router.get('/model/:id', function (req, res, next) {
   let modelId = req.params.id;
 
   res.render(`modelDetails`, { title: 'Express' });

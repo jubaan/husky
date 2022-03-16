@@ -10,6 +10,7 @@
 @import url('./newsletter.css');
 @import url('./signup.css');
 @import url('./login.css');
+@import url('./model-details.css');
 
 :root {
   --font-cabin: 'Cabin', sans-serif;
