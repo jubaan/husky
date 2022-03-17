@@ -11,6 +11,7 @@
 @import url('./signup.css');
 @import url('./login.css');
 @import url('./model-details.css');
+@import url('./cart.css');
 
 :root {
   --font-cabin: 'Cabin', sans-serif;
@@ -39,6 +40,12 @@ html {
 body {
   display: flex;
   justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
 }
 
 a {
