@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
 var cartRouter = require('./routes/cart');
+const res = require('express/lib/response');
 
 var app = express();
 
@@ -29,6 +30,10 @@ app.use('/', usersRouter);
 app.use('/models', productsRouter);
 app.use('/model', productsRouter);
 app.use('/cart', cartRouter);
+
+app.use((req, res, next) => {
+  res.status(404).render('404', {title: '404 Page Not Found'});
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

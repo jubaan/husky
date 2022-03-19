@@ -12,6 +12,7 @@
 @import url('./login.css');
 @import url('./model-details.css');
 @import url('./cart.css');
+@import url('notfound.css');
 
 :root {
   --font-cabin: 'Cabin', sans-serif;
