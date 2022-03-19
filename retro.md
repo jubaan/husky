@@ -18,8 +18,18 @@
   - Pair programming
   - Destinar 2 hrs diarias para avanzar con el proyecto
 
-
 ## Sprint 2 - Retrospectiva
+- ¿Qué hicimos bien?
+  - Mejoramos el diseño de UX
+  - Terminamos en tiempo las vistas requeridas
+  - Adicionalmente agregamos un handler para el error 404.
+- ¿Qué podemos mejorar?
+  - Mejorar la organizacion en los avances
+  - Centrarse en una cosa a la vez para terminar cosas en totalidad y no tener pendientes mas adelante de detalles que no se preevieron en un inicio.
+  - Dedicar 2 horas diarias al avance del proyecto
+- ¿Qué debemos implementar?
+  - Destinar tiempo todos los dias a avanzar en el proyecto, el sugerido es 2hrs diarias
+  
 ## Sprint 3 - Retrospectiva
 ## Sprint 4 - Retrospectiva
 ## Sprint 5 - Retrospectiva
