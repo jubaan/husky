@@ -1,0 +1,166 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 25px;
+  gap: 50px;
+}
+
+.hero__title {
+  padding: 0 30px;
+}
+
+.hero__title_bold {
+  font-family: var(--font-roboto-condensed);
+  font-size: 46px;
+  line-height: 70px;
+  color: var(--color-dark);
+  font-weight: var(--weight-bold);
+}
+
+.hero__title_light {
+  font-family: var(--font-roboto-condensed);
+  font-size: 46px;
+  line-height: 70px;
+  font-weight: var(--weight-light);
+}
+
+.categories {
+  display: flex;
+  overflow-x: scroll;
+  margin: 0 10px;
+  gap: 20px;
+}
+
+.categories::-webkit-scrollbar {
+  height: 4px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+  border-radius: 50px;
+}
+
+.categories::-webkit-scrollbar-track-piece {
+  background-color: var(--color-light);
+  border-radius: 50px;
+}
+
+.category {
+  flex: 0 0 260px;
+  margin-bottom: 15px;
+}
+
+.category__image {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.category__title {
+  font-family: var(--font-roboto-condensed);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  font-size: 16px;
+  color: var(--color-dark);
+}
+
+.category:hover .category__title {
+  color: var(--color-red);
+}
+
+.category__numeration {
+  font-size: 12px;
+  font-weight: var(--weight-regular);
+  color: var(--color-red);
+}
+
+.category__image_motocross {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/88814_RSC5206%20miwi%20B_Flat:Large?wid=1260&hei=718&dpr=off');
+  background-position: 20% 50%;
+}
+
+.category:hover .category__image_motocross {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/88814_RSC5206%20miwi%20B_Flat:Large?wid=1260&hei=718&dpr=off');
+  background-blend-mode: color;
+}
+
+.category__image_enduro {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/Action_FE-350-2022:Small?wid=800&hei=800&dpr=off');
+  background-position: 100% 50%;
+}
+
+.category:hover .category__image_enduro {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/Action_FE-350-2022:Small?wid=800&hei=800&dpr=off');
+  background-blend-mode: color;
+}
+
+.category__image_travel {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/Travel_SegmentPage_Norden901_Teaser1:Medium?wid=675&hei=507&dpr=off');
+  background-position: 80% 50%;
+}
+
+.category:hover .category__image_travel {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/Travel_SegmentPage_Norden901_Teaser1:Medium?wid=675&hei=507&dpr=off');
+  background-blend-mode: color;
+}
+
+.category__image_naked {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/101594_Vitpilen-401-2022?wid=375&dpr=off');
+  background-position: 50% 50%;
+}
+
+.category:hover .category__image_naked {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/101594_Vitpilen-401-2022?wid=375&dpr=off');
+  background-blend-mode: color;
+}
+
+.category__image_supermoto {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/supermoto-story2-1:Medium?wid=700&hei=523&dpr=off');
+  background-position: 30% 50%;
+}
+
+.category:hover .category__image_supermoto {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/supermoto-story2-1:Medium?wid=700&hei=523&dpr=off');
+  background-blend-mode: color;
+}
+
+.category__image_electric {
+  background-image: url('https://s7g10.scene7.com/is/image/ktm/100597_Husqvarna%20eDrive%20MY22:Large?wid=1260&hei=713&dpr=off');
+  background-position: 65% 50%;
+}
+
+.category:hover .category__image_electric {
+  background-image: linear-gradient(rgba(248, 224, 8, 1), rgba(248, 224, 8, 1)),
+    url('https://s7g10.scene7.com/is/image/ktm/100597_Husqvarna%20eDrive%20MY22:Large?wid=1260&hei=713&dpr=off');
+  background-blend-mode: color;
+}
+
+@media only screen and (min-width: 426px) {
+  .hero {
+    flex-direction: row;
+    padding: 0 30px;
+    gap: 100px;
+  }
+
+  .hero__title {
+    padding: 40px 0;
+  }
+
+  .categories {
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}

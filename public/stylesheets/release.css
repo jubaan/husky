@@ -1,0 +1,71 @@
+.releases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.release__logo {
+  fill: #fff;
+}
+
+.release__main {
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    url('https://s7g10.scene7.com/is/image/ktm/101418_HQV-Functional-Apparel-2022:Large?wid=1260&hei=718&dpr=off');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: color;
+  border-radius: 3px;
+}
+
+.release__secondary {
+  flex: 1 0 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light);
+  font-size: 24px;
+  border-radius: 3px;
+}
+
+.release__secondary_one {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    url('https://s7g10.scene7.com/is/image/ktm/101615_Svartpilen-401-2022:Medium?wid=700&hei=525&dpr=off');
+  background-blend-mode: lighten;
+}
+
+.release__secondary_two {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    url('https://s7g10.scene7.com/is/image/ktm/88814_RSC5206%20miwi%20B_Flat:Medium?wid=700&hei=525&dpr=off');
+  background-blend-mode: lighten;
+}
+
+.release__secondary_three {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    url('https://s7g10.scene7.com/is/image/ktm/94706_Norden%20901%202022%20(1)?$ktm_teaser_square$&wid=500&dpr=off');
+  background-blend-mode: lighten;
+}
+
+@media only screen and (min-width: 426px) {
+  .releases {
+    position: relative;
+    padding: 0;
+    padding: 0 30px;
+    gap: 30px;
+  }
+}
