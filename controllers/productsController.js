@@ -1,6 +1,6 @@
 const productsController = {
   index: (req, res) => {
-    res.render('models', { title: 'Express' });
+    res.render('products/models', { title: 'Express' });
   },
   show: (req, res) => {
     let modelId = req.params.id;

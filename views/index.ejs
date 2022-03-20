@@ -14,37 +14,7 @@
     <div class="page">
       <header class="header">
         <!-- Navbar -->
-        <nav class="navbar">
-          <a href="/" class="navbar__link">
-            <img
-              src="/images/logo.svg"
-              alt="Husqvarna Motorcycles Logo"
-              class="logo navbar__logo"
-            />
-          </a>
-          <ion-icon name="menu" class="navbar__icon"></ion-icon>
-          <ul class="navbar__menu">
-            <li class="navbar__item">
-              <a href="/" class="navbar__link navbar__link_active" active>
-                Home
-              </a>
-            </li>
-            <li class="navbar__item">
-              <a href="/models" class="navbar__link">Models</a>
-            </li>
-            <li class="navbar__item">
-              <a href="/cart" class="navbar__link">Cart</a>
-            </li>
-            <li class="navbar__item">
-              <a href="/login" class="navbar__link">Log in</a>
-            </li>
-            <li class="navbar__item">
-              <a href="/signup" class="navbar__link">
-                <span class="navbar__signup">Sign up</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <%- include("partials/__navbar.ejs") %>
         <!-- Hero -->
         <div class="hero">
           <h1 class="hero__title">
@@ -376,14 +346,8 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <p class="footer__copyright">
-          Copyright (c) JUBAAN 2022 | All Rights Reserved
-        </p>
-        <p class="footer__privacy-terms">
-          Privacy Policy | Terms and Conditions
-        </p>
-      </footer>
+      <!-- Footer -->
+      <%- include("./partials/__footer.ejs") %>
     </div>
     <script
       type="module"
