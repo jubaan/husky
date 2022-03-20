@@ -1,14 +1,18 @@
 const productsController = {
   index: (req, res) => {
-    res.render('products/models', { title: 'Express' });
+    res.render('products/models', { title: 'Models' });
   },
   show: (req, res) => {
     let modelId = req.params.id;
 
-    res.render('modelDetails', { title: 'Express' });
+    res.render('products/modelDetails', { title: 'Express' });
   },
-  create: (req, res) => {},
-  update: (req, res) => {},
+  create: (req, res) => {
+    res.render('products/create', { title: 'Create' });
+  },
+  update: (req, res) => {
+    res.render('products/edit', { title: 'Update' });
+  },
   delete: (req, res) => {},
   delete: (req, res) => {
     res.render('models', { title: 'Express' });

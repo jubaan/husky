@@ -1,6 +1,6 @@
 const cartController = {
   index: (req, res) => {
-    res.render('cart', { title: 'Express' });
+    res.render('cart', { title: 'Cart' });
   },
 };
 
