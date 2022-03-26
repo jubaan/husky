@@ -18,7 +18,7 @@
       </header>
       <main>
         <section class="section">
-          <h2 class="section__title">Add a new product</h2>
+          <h2 class="section__title">Edit your product</h2>
           <h3 class="section__subtitle">
             I want to do my own thing and not what everyone else does.
             Moderation is for cowards.
@@ -33,7 +33,7 @@
                 />
               </a>
             </div>
-            <form action="/signup?_method=PATCH" method="POST" class="form">
+            <form action="/models/save?_method=patch" method="POST" class="form">
               <div class="form__group">
                 <label for="name" class="form__label">Model Name</label>
                 <input
@@ -43,28 +43,32 @@
                   name="name"
                   placeholder="Write a name for the product..."
                   required
+                  value="<%= model.name %>"
                 />
               </div>
               <div class="form__group">
-                <label for="description" class="form__label">Description</label>
+                <label
+                  for="description"
+                  class="form__label"
+                  >Description</label
+                >
                 <textarea
                   rows="5"
                   class="form__input"
-                  id="productDescription"
-                  name="productDescription"
+                  id="description"
+                  name="description"
                   placeholder="Write a product description..."
                   required
-                ></textarea>
+                ><%= model.description %></textarea>
               </div>
               <div class="form__group">
                 <label for="name" class="form__label">Model</label>
-                <select name="model" id="model" required>
-                  <option value="electric">Electric</option>
-                  <option value="enduro">Enduro</option>
-                  <option value="travel">Travel</option>
-                  <option value="electric">Naked</option>
-                  <option value="enduro">Supermoto</option>
-                  <option value="travel">Electric Balance Bikes</option>
+                <select name="type" id="type" required>
+                  <% types.forEach(type => { %> <% if (type === model.model) { %>
+                  <option value="<%= type %>" selected><%= type %></option>
+                  <% } else { %>
+                  <option value="<%= type %>"><%= type %></option>
+                  <% } }); %>
                 </select>
               </div>
               <div class="form__group">
@@ -84,7 +88,12 @@
                   name="price"
                   placeholder="4599"
                   required
+                  value="<%= model.price %>"
                 />
+              </div>
+              <div class="form__group">
+                <label for="image" class="form__label">Product Image</label>
+                <input type="file" id="image" name="image" required />
               </div>
               <button type="submit" class="form__button">
                 Add New Motorcycle

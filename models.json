@@ -1,1 +1,68 @@
-{"name":"test2","productDescription":"test2","model":"electric","type":"motocross","price":"34543333"}
+[
+  {
+    "id": "6d1d2667-7a3f-4bcc-bedf-1e3d369abdb0",
+    "name": "safasdadfasdfasd",
+    "model": "enduro",
+    "type": "twoStroke",
+    "price": "243243"
+  },
+  {
+    "id": "6d1d2667-7a3f-4bcc-bedf-1e3d369abdb0",
+    "name": "safasdadfasdfasd",
+    "model": "enduro",
+    "type": "twoStroke",
+    "price": "243243"
+  },
+  {
+    "id": "6d1d2667-7a3f-4bcc-bedf-1e3d369abdb0",
+    "name": "safasdadfasdfasd",
+    "model": "enduro",
+    "type": "twoStroke",
+    "price": "243243"
+  },
+  {
+    "id": "6d1d2667-7a3f-4bcc-bedf-1e3d369abdb0",
+    "name": "safasdadfasdfasd",
+    "model": "enduro",
+    "type": "twoStroke",
+    "price": "243243"
+  },
+  {
+    "id": "6d1d2667-7a3f-4bcc-bedf-1e3d369abdb0",
+    "name": "safasdadfasdfasd",
+    "model": "enduro",
+    "type": "twoStroke",
+    "price": "243243"
+  },
+  {
+    "id": "a152ec3a-2872-44a1-8708-c779b1cf2bc1",
+    "name": "adfasdf",
+    "model": "electric",
+    "type": "motocross",
+    "price": "3234234"
+  },
+  {
+    "id": "a69f9600-7089-494f-bf2c-ae4b10d4b047",
+    "name": "adsf",
+    "description": "asd",
+    "model": "enduro",
+    "type": "motocross",
+    "price": "32222323"
+  },
+  {
+    "id": "43931dd5-8ce5-4314-9546-dbc43c2b80bb",
+    "name": "test",
+    "description": "test",
+    "model": "enduro",
+    "type": "motocross",
+    "price": "32222323"
+  },
+  {
+    "id": "6a07cd1d-3b3e-4145-a7c6-f3f8ba71510e",
+    "name": "test",
+    "description": "test",
+    "model": "electric",
+    "type": "twoStroke",
+    "price": "32222323"
+  }
+]
