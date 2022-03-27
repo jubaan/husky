@@ -41,7 +41,7 @@
                     <div class="motorbike__details">
                       <h2 class="motorbike__category"><%= `${model.model} / ${model.type}` %></h2>
                       <h2 class="motorbike__name"><%= model.name %></h2>
-                      <p class="motorbike__price">$ <%= model.price %> USD*</p>
+                      <p class="motorbike__price"><%=new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(model.price) %> USD*</p>
                     </div>
                     <a href="/model/<%= model.id %>" class="motorbike__link">Discover</a>
                   </div>
