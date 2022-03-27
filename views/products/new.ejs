@@ -33,7 +33,12 @@
                 />
               </a>
             </div>
-            <form action="/models/save" method="POST" class="form">
+            <form
+              action="/models/create"
+              enctype="multipart/form-data"
+              method="POST"
+              class="form"
+            >
               <div class="form__group">
                 <label for="name" class="form__label">Model Name</label>
                 <input
@@ -59,7 +64,7 @@
               <div class="form__group">
                 <label for="name" class="form__label">Model</label>
                 <select name="model" id="model" required>
-                  <option value="electric">Electric</option>
+                  <option value="electric" selected>Electric</option>
                   <option value="enduro">Enduro</option>
                   <option value="travel">Travel</option>
                   <option value="electric">Naked</option>
@@ -70,8 +75,7 @@
               <div class="form__group">
                 <label for="name" class="form__label">Type</label>
                 <select name="type" id="type" required>
-                  <option value="motocross">motocross</option>
-                  <option value="twoStroke">2-stroke</option>
+                  <option value="twoStroke" selected>2-stroke</option>
                   <option value="fourStroke">4-stroke</option>
                 </select>
               </div>
@@ -88,7 +92,7 @@
               </div>
               <div class="form__group">
                 <label for="image" class="form__label">Product Image</label>
-                <input type="file" id="image" name="image" required>
+                <input type="file" id="image" name="image" required />
               </div>
               <button type="submit" class="form__button">
                 Add New Motorcycle

@@ -33,7 +33,12 @@
                 />
               </a>
             </div>
-            <form action="/models/save?_method=patch" method="POST" class="form">
+            <form
+              action="/models/update?_method=patch"
+              enctype="multipart/form-data"
+              method="POST"
+              class="form"
+            >
               <div class="form__group">
                 <label for="name" class="form__label">Model Name</label>
                 <input
@@ -47,11 +52,7 @@
                 />
               </div>
               <div class="form__group">
-                <label
-                  for="description"
-                  class="form__label"
-                  >Description</label
-                >
+                <label for="description" class="form__label">Description</label>
                 <textarea
                   rows="5"
                   class="form__input"
@@ -59,12 +60,15 @@
                   name="description"
                   placeholder="Write a product description..."
                   required
-                ><%= model.description %></textarea>
+                >
+<%= model.description %></textarea
+                >
               </div>
               <div class="form__group">
                 <label for="name" class="form__label">Model</label>
                 <select name="type" id="type" required>
-                  <% types.forEach(type => { %> <% if (type === model.model) { %>
+                  <% types.forEach(type => { %> <% if (type === model.model) {
+                  %>
                   <option value="<%= type %>" selected><%= type %></option>
                   <% } else { %>
                   <option value="<%= type %>"><%= type %></option>

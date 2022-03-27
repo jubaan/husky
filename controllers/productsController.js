@@ -19,12 +19,12 @@ const productsController = {
 
     let model = models.find((model) => model.id === modelId);
 
-    res.render('products/modelDetails', { title: model.name, model: model  });
+    res.render('products/modelDetails', { title: model.name, model: model });
+  },
+  new: (req, res) => {
+    res.render('products/new', { title: 'New' });
   },
   create: (req, res) => {
-    res.render('products/create', { title: 'Create' });
-  },
-  save: (req, res) => {
     if (modelsFile === '') {
       models = [];
     } else {
@@ -37,7 +37,7 @@ const productsController = {
       description: req.body.description,
       model: req.body.model,
       type: req.body.type,
-      imageFile: req.body.file,
+      imageFile: req.file,
       price: req.body.price,
     };
 
@@ -45,7 +45,22 @@ const productsController = {
     modelsJSON = JSON.stringify(models);
 
     fs.writeFileSync(modelsPath, modelsJSON);
-    res.redirect('/models')
+    res.redirect('/models');
+  },
+  edit: (req, res) => {
+    let modelId = req.params.id;
+
+    let types = ['electric', 'enduro', 'travel', 'naked', 'supermoto'];
+
+    if (modelsFile === '') {
+      models = [];
+    } else {
+      models = JSON.parse(modelsFile);
+    }
+
+    let model = models.find((model) => model.id === modelId);
+
+    res.render('products/edit', { title: 'Edit', model: model, types: types });
   },
   update: (req, res) => {
     let modelId = req.params.id;
@@ -74,28 +89,6 @@ const productsController = {
 
     res.render('products/edit', { title: 'Edit', model: model });
   },
-  edit: (req, res) => {
-    let modelId = req.params.id;
-    
-    let types = [
-      'electric',
-      'enduro',
-      'travel',
-      'naked',
-      'supermoto',
-    ];
-
-     if (modelsFile === '') {
-       models = [];
-     } else {
-       models = JSON.parse(modelsFile);
-     }
-
-    let model = models.find((model) => model.id === modelId);
-    
-    res.render('products/edit', { title: 'Edit', model: model, types: types });
-  },
-  update: (req, res) => {},
   delete: (req, res) => {
     let modelId = req.params.id;
 
