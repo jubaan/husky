@@ -10,11 +10,7 @@ let storage = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     console.log(file);
-    const newFilename =
-      'model-' +
-      path.originalname +
-      Date.now() +
-      path.extname(file.originalname);
+    const newFilename = `${Date.now()}-${file.originalname.replace(/\s/g, '-')}`;
     cb(null, newFilename);
   },
 });

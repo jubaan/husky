@@ -10,7 +10,7 @@ let models;
 const productsController = {
   index: (req, res) => {
     models = JSON.parse(modelsFile);
-
+    console.log(models[0].image.filename)
     res.render('products/models', { title: 'Models', models: models });
   },
   show: (req, res) => {
@@ -100,6 +100,14 @@ const productsController = {
   },
   delete: (req, res) => {
     let modelId = req.params.id;
+
+    models = JSON.parse(modelsFile);
+
+    models.map((model) => {
+      if (model.id === modelId) {
+        models.splice(model, 1);
+      }
+    });
 
     res.redirect('/models', { title: 'Express' });
   },

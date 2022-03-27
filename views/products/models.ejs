@@ -29,31 +29,24 @@
                 </div>
               </div>
               <div class="apparel">
-                <% for(let i = 0; i < 3; i++) {%>
+                <% models.map(model => { %>
                 <div class="motorbike">
                   <div class="motorbike__image">
                     <img
-                      src="<%= models[i].image %>"
+                      src="<%= `images/products/${model.image.filename}` %>"
                       alt="Husqvarna Motorcycles EE5"
-                      class="motorbike__image"
                     />
                   </div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
-                      <h2 class="motorbike__category">
-                        <%= models[i].model %> / <%= models[i].type %>
-                      </h2>
-                      <h2 class="motorbike__name"><%= models[i].name %></h2>
-                      <p class="motorbike__price"><%= new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(models[i].price) %>
-                        USD*
-                      </p>
+                      <h2 class="motorbike__category"><%= `${model.model} / ${model.type}` %></h2>
+                      <h2 class="motorbike__name"><%= model.name %></h2>
+                      <p class="motorbike__price">$ <%= model.price %> USD*</p>
                     </div>
-                    <a href="/model/<%= models[i].id %>" class="motorbike__link"
-                      >Discover</a
-                    >
+                    <a href="/model/<%= model.id %>" class="motorbike__link">Discover</a>
                   </div>
                 </div>
-                <% } %>
+                <% }) %>
               </div>
             </div>
             <div class="motorbikes__container">
@@ -65,7 +58,7 @@
               </div>
               <div class="apparel">
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -76,7 +69,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -87,7 +80,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -98,7 +91,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -119,7 +112,7 @@
               </div>
               <div class="apparel">
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -130,7 +123,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -141,7 +134,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -152,7 +145,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -163,7 +156,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -174,7 +167,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -185,7 +178,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -196,7 +189,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -207,7 +200,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -218,7 +211,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
@@ -229,7 +222,7 @@
                   </div>
                 </div>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image"></div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">travel / electric</h2>
