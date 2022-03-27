@@ -10,12 +10,31 @@ let storage = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     console.log(file);
-    const newFilename = 'model-' + path.originalname + Date.now() + path.extname(file.originalname);
+    const newFilename =
+      'model-' +
+      path.originalname +
+      Date.now() +
+      path.extname(file.originalname);
     cb(null, newFilename);
   },
 });
 
-let upload = multer({ storage: storage });
+let upload = multer({
+  storage: storage,
+  fileFilter: (req, file, cb) => {
+    if (
+      file.mimetype === 'image/jpeg' ||
+      file.mimetype === 'image/png' ||
+      file.mimetype === 'image/jpg'
+    ) {
+      cb(null, true);
+    } else {
+      cb(null, false);
+
+      return cb(new Error('Only .png, .jpg and .jpeg format allowed!'));
+    }
+  },
+});
 
 router.get('/', productsController.index);
 router.get('/new', productsController.new);
