@@ -31,7 +31,13 @@
               <div class="apparel">
                 <% for(let i = 0; i < 3; i++) {%>
                 <div class="motorbike">
-                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__image">
+                    <img
+                      src="<%=models[i].image=>"
+                      alt="Husqvarna Motorcycles EE5"
+                      class="motorbike__image"
+                    />
+                  </div>
                   <div class="motorbike__content">
                     <div class="motorbike__details">
                       <h2 class="motorbike__category">

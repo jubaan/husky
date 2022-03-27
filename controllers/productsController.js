@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
+const { runInNewContext } = require('vm');
 
 let modelsPath = path.join(__dirname, '../models.json');
 let modelsFile = fs.readFileSync(modelsPath, { encoding: 'utf-8' });
@@ -31,13 +32,21 @@ const productsController = {
       models = JSON.parse(modelsFile);
     }
 
+    const file = req.file;
+
+    if (!file) {
+      const error = new Error('Please provide a file');
+      error.httpStatusCode = 400;
+      return next(error);
+    }
+
     let model = {
       id: uuidv4(),
       name: req.body.name,
       description: req.body.description,
       model: req.body.model,
       type: req.body.type,
-      imageFile: req.file,
+      image: req.file,
       price: req.body.price,
     };
 
