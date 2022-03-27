@@ -1,6 +1,6 @@
 const indexController = {
   index: (req, res) => {
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Huskqvarna Motorcycles' });
   },
 };
 
