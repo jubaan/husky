@@ -1,0 +1,16 @@
+[
+ {
+  "id": "ed494fe8-7bdd-4b9d-8288-be29f7b6e2c6",
+  "username": "Julio",
+  "email": "julio.ab@outlook.com",
+  "password": "12345",
+  "passwordConfirmation": "12345"
+ },
+ {
+  "id": "061de1c9-930e-49a0-83d8-ceebe5b4d79e",
+  "username": "jubaan",
+  "email": "julio.ab@outlook2.com",
+  "password": "1234456",
+  "passwordConfirmation": "1234567"
+ }
+]
