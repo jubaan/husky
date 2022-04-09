@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <!-- Navbar -->
+        <%- include("partials/__navbar.ejs") %>
+        <!-- Hero -->
+        <div class="hero">
+          <h1 class="hero__title">
+            <span class="hero__title_bold">Go Ride.</span>
+            <br />
+            <span class="hero__title_light">
+              Everything
+              <br />
+              else can
+              <br />
+              wait.
+            </span>
+          </h1>
+          <div class="categories">
+            <div class="category">
+              <a class="category__link" href="/models/#motocross">
+                <div class="category__image category__image_motocross"></div>
+              </a>
+              <a class="category__link" href="/models/#motocross">
+                <div class="category__content">
+                  <p class="category__numeration">01</p>
+                  <h2 class="category__title">Motocross</h2>
+                </div>
+              </a>
+            </div>
+            <div class="category">
+              <a class="category__link" href="/models/#enduro">
+                <div class="category__image category__image_enduro"></div>
+              </a>
+              <a class="category__link" href="/models/#enduro">
+                <div class="category__content">
+                  <p class="category__numeration">02</p>
+                  <h2 class="category__title">Enduro</h2>
+                </div>
+              </a>
+            </div>
+            <div class="category">
+              <a class="category__link" href="/models/#travel">
+                <div class="category__image category__image_travel"></div>
+              </a>
+              <a class="category__link" href="/models/#travel">
+                <div class="category__content">
+                  <p class="category__numeration">03</p>
+                  <h2 class="category__title">Travel</h2>
+                </div>
+              </a>
+            </div>
+            <div class="category">
+              <a class="category__link" href="/models/#naked">
+                <div class="category__image category__image_naked"></div>
+              </a>
+              <a class="category__link" href="/models/#naked">
+                <div class="category__content">
+                  <p class="category__numeration">04</p>
+                  <h2 class="category__title">Naked</h2>
+                </div>
+              </a>
+            </div>
+            <div class="category">
+              <a class="category__link" href="/models/#supermoto">
+                <div class="category__image category__image_supermoto"></div>
+              </a>
+              <a class="category__link" href="/models/#supermoto">
+                <div class="category__content">
+                  <p class="category__numeration">05</p>
+                  <h2 class="category__title">Supermoto</h2>
+                </div>
+              </a>
+            </div>
+            <div class="category">
+              <a class="category__link" href="/models/#electric">
+                <div class="category__image category__image_electric"></div>
+              </a>
+              <a class="category__link" href="/models/#electric">
+                <div class="category__content">
+                  <p class="category__numeration">06</p>
+                  <h2 class="category__title">Electric Balance Bikes</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!-- New Releases -->
+        <section class="section">
+          <h2 class="section__title">New Releases</h2>
+          <h3 class="section__subtitle">
+            Husqvarna Motorcycles is pleased to announce it's brand-new
+            motorcycles range for 2022.
+          </h3>
+          <div class="section__content">
+            <div class="releases">
+              <div class="release__main">
+                <a href="" class="release__link">
+                  <img
+                    src="/images/logo-light.svg"
+                    alt="Husqvarna Motorcycles Logo"
+                    class="logo release__logo"
+                  />
+                </a>
+              </div>
+              <a href="#" class="release__secondary release__secondary_one"
+                >#svartpilen401</a
+              >
+              <a href="#" class="release__secondary release__secondary_two"
+                >#fc450</a
+              >
+              <a href="#" class="release__secondary release__secondary_three"
+                >#norden901</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Motorcycles -->
+        <section class="section">
+          <h2 class="section__title">Motorcycles</h2>
+          <h3 class="section__subtitle">
+            Simple. Progressive. Progressive in desing simple in form.
+          </h3>
+          <div class="section__content">
+            <div class="motorbikes__container" id="motocross">
+              <div class="motorbikes__header">
+                <div>
+                  <h2 class="motorbikes__numeration">01</h2>
+                  <h2 class="motorbikes__category">Motocross</h2>
+                </div>
+                <a href="#" class="motorbikes__link"
+                  >See all
+                  <ion-icon
+                    name="arrow-forward-circle-outline"
+                    class="motorbikes__icon"
+                  ></ion-icon
+                ></a>
+              </div>
+              <div class="apparel">
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="/model/1" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="motorbikes__container">
+              <div class="motorbikes__header">
+                <div>
+                  <h2 class="motorbikes__numeration">02</h2>
+                  <h2 class="motorbikes__category">Enduro</h2>
+                </div>
+                <a href="#" class="motorbikes__link"
+                  >See all
+                  <ion-icon
+                    name="arrow-forward-circle-outline"
+                    class="motorbikes__icon"
+                  ></ion-icon
+                ></a>
+              </div>
+              <div class="apparel">
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="motorbikes__container">
+              <div class="motorbikes__header">
+                <div>
+                  <h2 class="motorbikes__numeration">03</h2>
+                  <h2 class="motorbikes__category">Travel</h2>
+                </div>
+                <a href="#" class="motorbikes__link"
+                  >See all
+                  <ion-icon
+                    name="arrow-forward-circle-outline"
+                    class="motorbikes__icon"
+                  ></ion-icon
+                ></a>
+              </div>
+              <div class="apparel">
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+                <div class="motorbike">
+                  <div class="motorbike__image motorbike__image_ee5"></div>
+                  <div class="motorbike__content">
+                    <div class="motorbike__details">
+                      <h2 class="motorbike__category">travel / electric</h2>
+                      <h2 class="motorbike__name">EE 5 | 2022</h2>
+                      <p class="motorbike__price">$ 5,499.00 USD*</p>
+                    </div>
+                    <a href="" class="motorbike__link">Discover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Newsletter -->
+        <section class="section">
+          <h2 class="section__title">Newsletter</h2>
+          <h3 class="section__subtitle">
+            Sign up for the Husqvarna Motorcycles Newsletter now! The Husqvarna
+            Motorcycles Newsletter keeps you updated about new models, news &
+            events and the latest Apparel and Technical Accessories releases.
+          </h3>
+          <div class="section__content">
+            <div class="newsletter">
+              <div class="newsletter__main">
+                <form action="/" method="POST" class="newsletter__form">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    class="newsletter__input"
+                  />
+                  <a href="#" class="newsletter__button">Subscribe</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <%- include("./partials/__footer.ejs") %>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

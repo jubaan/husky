@@ -1,0 +1,84 @@
+.details__container {
+  padding: 50px 30px 0;
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.detail__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  flex: 1 0 200px;
+}
+
+.detail__price {
+  margin-bottom: 30px;
+}
+
+.detail__image {
+  flex: 1 0 200px;
+  height: 400px;
+  background-color: #ffffff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  border: 1px solid var(--color-light);
+}
+
+.detail__category {
+  font-family: var(--font-cabin);
+  font-weight: var(--weight-regular);
+  color: var(--color-red);
+  margin-bottom: 15px;
+}
+
+.detail__name {
+  font-family: var(--font-roboto-condensed);
+  font-weight: var(--weight-bold);
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+.detail__link {
+  padding: 7px 14px;
+  border-radius: 3px;
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+  width: 100%;
+  text-align: center;
+}
+
+.detail__link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.detail__image_ee5 {
+  background-image: url('../images/models/motocross/ee5/ee502.jpg');
+  background-position: 50% 50%;
+}
+
+.detail__image_tc50 {
+  background-image: url('../images/models/motocross/tc50/tc50.jpeg');
+  background-position: 50% 50%;
+}
+
+.detail__image_tc65 {
+  background-image: url('../images/models/motocross/tc65/tc65.jpeg');
+  background-position: 50% 50%;
+}
+
+/* @media only screen and (min-width: 870px) {
+  .detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+} */

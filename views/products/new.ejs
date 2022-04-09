@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <!-- Navbar -->
+      <%- include("../partials/__navbar.ejs") %>
+    </header>
+    <main>
+      <section class="section">
+        <h2 class="section__title">Add a new product</h2>
+        <h3 class="section__subtitle">
+          I want to do my own thing and not what everyone else does.
+          Moderation is for cowards.
+        </h3>
+        <div class="section__content signup">
+          <div class="signup__image">
+            <a href="" class="signup__link">
+              <img src="/images/logo-light.svg" alt="Husqvarna Motorcycles Logo" class="logo signup__logo" />
+            </a>
+          </div>
+          <form action="/models/create" method="POST" class="form">
+            <div class="form__group">
+              <label for="name" class="form__label">Model Name</label>
+              <input type="text" class="form__input" id="name" name="name" placeholder="Write a name for the product..."
+                required />
+            </div>
+            <div class="form__group">
+              <label for="description" class="form__label">Description</label>
+              <textarea rows="5" class="form__input" id="description" name="description"
+                placeholder="Write a product description..." required></textarea>
+            </div>
+            <div class="form__group">
+              <label for="name" class="form__label">Model</label>
+              <select name="model" id="model" required>
+                <option value="electric" selected>Electric</option>
+                <option value="enduro">Enduro</option>
+                <option value="travel">Travel</option>
+                <option value="electric">Naked</option>
+                <option value="enduro">Supermoto</option>
+                <option value="travel">Electric Balance Bikes</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="name" class="form__label">Type</label>
+              <select name="type" id="type" required>
+                <option value="2-stroke" selected>2-stroke</option>
+                <option value="4-stroke">4-stroke</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="price" class="form__label">Price</label>
+              <input type="number" class="form__input" id="price" name="price" placeholder="4599" required />
+            </div>
+
+            <button type="submit" class="form__button">
+              Add New Motorcycle
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <%- include("../partials/__footer.ejs") %>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

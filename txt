@@ -1,0 +1,4 @@
+              <!--/* <div class="form__group">
+                <label for="image" class="form__label">Product Image</label>
+                <input type="file" id="image" name="image" required />
+              </div> */-->

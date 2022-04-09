@@ -1,0 +1,137 @@
+.motorbikes__container {
+  padding: 0 30px;
+}
+
+.motorbikes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 30px 0;
+  border-top: 1px solid var(--color-red);
+}
+
+.motorbikes__numeration {
+  color: var(--color-red);
+}
+
+.motorbikes__category {
+  font-family: var(--font-roboto-condensed);
+  font-weight: var(--weight-bold);
+  color: var(--color-dark);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.motorbikes__link {
+  display: flex;
+  align-items: center;
+}
+
+.motorbikes__link,
+.motorbikes__icon {
+  color: var(--color-red);
+}
+
+.motorbikes__icon {
+  color: var(--color-red);
+  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.apparel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  margin: 20px 0 40px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.apparel::-webkit-scrollbar {
+  height: 4px;
+}
+
+.apparel::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+  border-radius: 50px;
+}
+
+.apparel::-webkit-scrollbar-track-piece {
+  background-color: var(--color-light);
+  border-radius: 50px;
+}
+
+.motorbike {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.motorbike__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.motorbike__image {
+  height: 250px;
+  width: 100%;
+  background-color: #ffffff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid var(--color-light);
+}
+
+.motorbike__category {
+  font-family: var(--font-cabin);
+  font-weight: var(--weight-regular);
+  color: var(--color-red);
+  margin-bottom: 15px;
+}
+
+.motorbike__name {
+  font-family: var(--font-roboto-condensed);
+  font-weight: var(--weight-bold);
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+.motorbike__link {
+  padding: 7px 14px;
+  border-radius: 3px;
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+.motorbike__link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.motorbike__image_ee5 {
+  background-image: url('../images/models/motocross/ee5/ee502.jpg');
+  background-position: 50% 50%;
+}
+
+.motorbike__image_tc50 {
+  background-image: url('../images/models/motocross/tc50/tc50.jpeg');
+  background-position: 50% 50%;
+}
+
+.motorbike__image_tc65 {
+  background-image: url('../images/models/motocross/tc65/tc65.jpeg');
+  background-position: 50% 50%;
+}
+
+/* @media only screen and (min-width: 870px) {
+  .motorbike:last-child {
+    display: none;
+  }
+} */
