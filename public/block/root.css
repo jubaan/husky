@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@300;700&display=swap');
+
+* p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text: 14px/1.5 400 'Cabin', sans-serif;
+  --heading: 24px/1.5 700 'Roboto Condensed', sans-serif;
+  --subheading: 18px/1.5 700 'Cabin', sans-serif;
+  --menu-item: 700 16px 'Roboto Condensed', sans-serif;
+  --gray: #939599;
+  --red: #D34A42;
+  --yellow: #F8E008;
+  --dark: #373948;
+  --light: #F0ECEA;
+}
+
+.menu__hamburger:hover.menu_device_mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light);
+  z-index: 1;
+}

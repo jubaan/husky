@@ -1,0 +1,14 @@
+.menu__hamburger {
+  display: block;
+  height: 24px;
+  width: 24px;
+  color: var(--red);
+}
+
+
+
+@media only screen and (min-width: 769px) {
+  .menu__hamburger {
+    display: none;
+  }
+}

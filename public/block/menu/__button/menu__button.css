@@ -1,0 +1,12 @@
+.menu__button {
+  padding: 9px 18px;
+  border: 1px solid var(--red);
+  border-radius: 3px;
+  color: var(--red);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu__button:hover {
+  background-color: var(--red);
+  color: var(--light);
+}

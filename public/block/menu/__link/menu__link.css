@@ -1,0 +1,11 @@
+.menu__link {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+  display: block;
+}
+
+.menu__link:hover {
+  color: var(--dark);
+}

@@ -1,0 +1,12 @@
+.menu_device_desktop {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .menu_device_desktop {
+    display: flex;
+  }
+}
